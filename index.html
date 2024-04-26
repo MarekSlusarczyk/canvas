@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Canvas</title>
+        <style>
+            body {
+                height: 100vh;
+            }
+
+            canvas {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 2px solid orangered;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas width="800" height="500"></canvas>
+
+        <script>
+            const canvas = document.querySelector('canvas');
+            const ctx = canvas.getContext('2d');
+
+            // ctx.fillStyle = '#FF0000';
+            // ctx.fillRect(0, 0, 100, 100);
+
+            // ctx.strokeStyle = 'green';
+            // ctx.strokeRect(120, 10, 100, 200);
+
+            // ctx.clearRect(0, 0, 50, 50);
+
+            // ctx.beginPath();
+            // ctx.lineWidth = 10;
+            // // ctx.lineCap = 'square'; 
+            // ctx.strokeStyle = 'blue';
+            // ctx.moveTo(150, 50);
+            // ctx.lineTo(300, 200);
+            // ctx.lineTo(500, 100);
+            // ctx.closePath();
+            // ctx.stroke();
+            // ctx.fill();
+
+            // ctx.beginPath();
+            // ctx.lineWidth = 5;
+            // // ctx.arc(x, y, promień, kąt początkowy, kąt końcowy, true) true - przeciwnie do wskazówek zegara
+            // ctx.arc(200, 200, 60, 0, (Math.PI / 180) * 360, true);
+            // ctx.stroke();
+
+            ctx.beginPath();
+            ctx.strokeStyle = 'red';
+            ctx.lineWidth = 20;
+            ctx.arc(200, 250, 140, 0, (Math.PI / 180) * 360, true);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.fillRect(100, 240, 160, 25);
+            ctx.fillRect(266, 240, 7, 25);
+            ctx.fillRect(279, 240, 7, 25);
+
+            ctx.beginPath();
+            ctx.strokeStyle = 'black';
+            ctx.lineWidth = 7;
+            ctx.arc(242, 230, 40, 0, (Math.PI / 180) * 290, true);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.strokeStyle = 'black';
+            ctx.lineWidth = 7;
+            ctx.arc(260, 184, 10, 190, (Math.PI / 180) * 270, false);
+            ctx.stroke();
+            ctx.closePath();
+
+
+
+
+            ctx.beginPath();
+            ctx.strokeStyle = 'black';
+            ctx.lineWidth = 7;
+            ctx.arc(250, 230, 20, 0, (Math.PI / 180) * 290, true);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.strokeStyle = 'black';
+            ctx.lineWidth = 7;
+            ctx.arc(245, 193, 25, 70, (Math.PI / 180) * 280, false);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.strokeStyle = 'red';
+            ctx.lineWidth = 20;
+            ctx.moveTo(85, 160);
+            ctx.lineTo(315, 340);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.strokeStyle = 'red';
+            ctx.lineWidth = 20;
+            ctx.arc(600, 250, 140, 0, (Math.PI / 180) * 360, true);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.fillRect(505, 240, 40, 25);
+            ctx.fillRect(550, 240, 120, 25);
+            ctx.fillRect(676, 240, 7, 25);
+            ctx.fillRect(689, 240, 7, 25);
+
+            ctx.beginPath();
+            ctx.strokeStyle = 'white';
+            ctx.arc(525, 232, 5, 0, (Math.PI / 180) * 360, true);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.strokeStyle = 'white';
+            ctx.arc(525, 272, 5, 0, (Math.PI / 180) * 360, true);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.fillStyle = 'white'
+            ctx.fillRect(560, 250, 15, 3);
+            ctx.fillRect(643, 250, 15, 3);
+            ctx.fillRect(649, 245, 3, 13);
+
+            ctx.beginPath();
+            ctx.strokeStyle = 'red';
+            ctx.lineWidth = 20;
+            ctx.moveTo(500, 160);
+            ctx.lineTo(715, 340);
+            ctx.stroke();
+            ctx.closePath();
+        </script>
+    </body>
+</html>
